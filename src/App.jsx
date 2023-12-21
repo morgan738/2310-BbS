@@ -80,10 +80,10 @@ function App() {
       <Route path='/successReg' element={<SuccessRegi />}/>
       <Route path='/search' element={<Search books={books} />}/>
       <Route path='/books' element={<Books books={books}/>}/>
-      <Route path='/books/:id' element={<SingleBook books={books} user={user} reserved={reserved} setReserved={setReserved} setBooks={setBooks}/>} />
+      <Route path='/books/:id' element={<SingleBook books={books} user={user} reserved={reserved} setReserved={setReserved}/>} />
       <Route path='/login' element={<Login setUser={setUser} setToken={setToken}/>}/>
       <Route path='/register' element={<Register />}/>
-      <Route path='/account' element={<Account user={user} setUser={setUser} setToken={setToken} reserved={reserved} setReserved={setReserved} setBooks={setBooks} books={books}/>}/>
+      <Route path='/account' element={<Account user={user} setUser={setUser} setToken={setToken} reserved={reserved} setReserved={setReserved}/>}/>
     </Routes>
 
       

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import axios from "axios"
 
-const SingleBook = ({books, user, reserved, setReserved, setBooks}) => {
+const SingleBook = ({books, user, reserved, setReserved}) => {
     const params = useParams()
     const id = params.id*1
     
